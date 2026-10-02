@@ -11,6 +11,7 @@
     <link rel="shortcut icon"
         href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS-tYrIUi-8ZuTfiCmWLGh-mtrxnf5oCnqIdfjJUPWXX8UgxadHBqnFmI&s=10"
         type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="../CSS/homepage.css">
 </head>
 
@@ -61,8 +62,20 @@
 
     <div class="container">
 
-        <div class="banner">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD6NCZEiXlYFrt2zOeS83i0WGJRsKUr8bx2r3-satNPZV--iNLnDE6pKov&s=10" alt="">
+        <div class="banner swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD6NCZEiXlYFrt2zOeS83i0WGJRsKUr8bx2r3-satNPZV--iNLnDE6pKov&s=10" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://picsum.photos/1200/400?random=1" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://picsum.photos/1200/400?random=2" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+           
         </div>
         <br><br>
         <div class="products-container">
@@ -149,7 +162,6 @@
                             alt="">
                     </div>
                     <div class="price">$12.991</div>
-
                     <div class="button" style="display: flex; align-items: center; gap: 20px;">
                         <button class="addTocart">AddToCart</button>
                         <button>View</button>
@@ -275,6 +287,24 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.banner', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>
