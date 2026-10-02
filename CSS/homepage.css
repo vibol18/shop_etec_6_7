@@ -104,6 +104,9 @@
     .menu{
         display: none;
     }
+    .container{
+        width: 100%;
+    }
     .navigationbar {
         display: block;
         display: flex;
@@ -131,5 +134,8 @@
     .products-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .banner img{
+        width:400px;
     }
 }
