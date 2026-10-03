@@ -16,6 +16,7 @@
 .Products {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
+    height: 270px;
     padding-bottom: 10px;
     flex-direction: column;
     justify-content: center;
